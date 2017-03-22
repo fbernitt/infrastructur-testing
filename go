@@ -17,6 +17,10 @@ function task_build {
   embedmd markdown.md > markdown.md.gen
 }
 
+function task_serve {
+  python -m SimpleHTTPServer 8000 0.0.0.0
+}
+
 function task_test1 {
   ensure_bundle
   bundle exec rspec spec/example1/example_spec.rb
@@ -41,6 +45,7 @@ CMD=${1:-}
 shift || true
 case ${CMD} in
   build) task_build ;;
+  serve) task_serve ;;
   test1) task_test1 ;;
   test2) task_test2 ;;
   test3) task_test3 ;;
