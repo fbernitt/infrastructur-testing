@@ -220,7 +220,9 @@ $ bundle exec rspec spec/example1/example_spec.rb
 - cron
 - group
 - ...
+
 ---
+
 ## Backends
 
 - docker
@@ -230,7 +232,9 @@ $ bundle exec rspec spec/example1/example_spec.rb
 ???
 
 - Many different backends
+
 ---
+
 # Links
 
 - This presentation: [https://github.com/fbernitt/infrastructure-testing](https://github.com/fbernitt/infrastructure-testing)
